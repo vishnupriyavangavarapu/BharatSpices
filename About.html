@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboutr</title>
+    <script>
+        function transferInfo() {
+            // Get the text from the first button
+            var info = document.getElementById("Login").innerText;
+            
+            // Set the text of the second button to the information from the first button
+            document.getElementById("About").innerText = info;
+        }
+    </script>
+</head>
+<body>
+    <!-- First button with some information -->
+    <button id="Login" onclick="transferInfo()">About</button>
+
+    <!-- Second button where information will be transferred -->
+    <button id="About"></button>
+</body>
+</html>
